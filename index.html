@@ -724,6 +724,12 @@
             });
         });
         
+        // Form Submission
+        const form = document.getElementById('legalConsultation');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry. I will contact you shortly to discuss your legal matter.');
+            form.reset();
         });
     </script>
 </body>
